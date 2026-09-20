@@ -15,6 +15,7 @@
   --color-text: #17221F;
   --color-muted: #71807B;
   --color-accent: #65D6B0;
+  --color-borders: #07151d33;
   --gradient-btn: linear-gradient(100deg,
       #8FF3CE 0%,
       #A7F5DC 100%);
@@ -38,6 +39,7 @@
   --color-text: #FFFFFF;
   --color-muted: #9BAAA5;
   --color-accent: #65D6B0;
+  --color-borders: #ffffff40;
   --gradient-primary: linear-gradient(115deg,
       #07151D 0%,
       #0A1C25 45%,
@@ -138,7 +140,7 @@ p {
   background: var(--gradient-primary);
 }
 
-[data-theme="dark"] .header  {
+[data-theme="dark"] .header {
   border-bottom: 1px solid #ffffff5e;
 }
 
@@ -674,6 +676,7 @@ p {
   align-items: center;
   justify-content: space-between;
   background: var(--gradient-primary);
+  padding: 20px 30px;
 }
 
 .footer__logo {
@@ -709,6 +712,71 @@ p {
   transition: color 0.5s ease-in-out;
 }
 
-.footer__link:hover{
-  color: var(--color-muted);
+.footer__link:hover {
+  color: var(--color-accent);
+}
+
+.contacts__link{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.contacts__text{
+  font-size: 13pt;
+  transition: color 0.5s ease-in-out;
+}
+
+.contacts__icon{
+  color: var(--color-text);
+  width: 20px;
+  height: 20px;
+  transition: color 0.5s ease-in-out;
+}
+
+.contacts__link:hover .contacts__icon, .contacts__link:hover .contacts__text{
+  color: var(--color-accent);
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+}
+
+.socials__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--color-borders);
+  border-radius: 50%;
+  color: var(--color-text);
+
+  font-size: 13pt;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    background-color 0.5s ease-in-out,
+    border-color 0.5s ease-in-out,
+    transform 0.5s ease-in-out;
+}
+
+.socials__item .socials__icon {
+  width: 25px;
+  height: 25px;
+  transition: color 0.5s ease-in-out;
+}
+
+.socials__item:hover svg {
+  color: var(--color-accent);
+}
+
+.socials__item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
 }
