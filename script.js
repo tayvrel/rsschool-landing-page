@@ -1,42 +1,14 @@
 const themeToggle = document.querySelector('#themeToggle');
+const html = document.documentElement;
+const choosedTheme = localStorage.getItem('theme');
 
-themeToggle.addEventListener('click', () => {
-  const html = document.documentElement;
-
-  const isDark = html.dataset.theme === 'dark';
-
-  html.dataset.theme = isDark ? 'light' : 'dark';
-});
-
-
-const track = document.querySelector('.slider__track');
-const slides = document.querySelectorAll('.slider__slide');
-
-const prevButton = document.querySelector('.slider__button--prev');
-const nextButton = document.querySelector('.slider__button--next');
-
-let currentSlide = 0;
-
-function updateSlider() {
-  track.style.transform = `translateX(-${currentSlide * 100}%)`;
+if (choosedTheme) {
+  html.dataset.theme = choosedTheme;
 }
 
-nextButton.addEventListener('click', () => {
-  currentSlide++;
-
-  if (currentSlide >= slides.length) {
-    currentSlide = 0;
-  }
-
-  updateSlider();
-});
-
-prevButton.addEventListener('click', () => {
-  currentSlide--;
-
-  if (currentSlide < 0) {
-    currentSlide = slides.length - 1;
-  }
-
-  updateSlider();
+themeToggle.addEventListener('click', () => {
+  const isDark = html.dataset.theme === 'dark';
+  const newTheme = isDark ? 'light' : 'dark';
+  html.dataset.theme = newTheme;
+  localStorage.setItem('theme', newTheme);
 });

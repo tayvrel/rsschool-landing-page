@@ -12,13 +12,13 @@
 <body>
   <div class="wrapper">
     <header class="header" id="header">
-      <a href="./index.html" class="header__logo">
+      <a href="javascript:void(0)" class="header__logo">
         <img src="./assets/logo.png" alt="Weltia">
         <p>Weltia</p>
       </a>
 
       <nav class="header__nav">
-        <a href="./index.html" class="header__link header__link--active">
+        <a href="javascript:void(0)" class="header__link header__link--active">
           Главная
         </a>
         <a href="./catalog.html" class="header__link">
@@ -31,25 +31,32 @@
           Контакты
         </a>
       </nav>
-
-      <div class="theme-toggle">
-        <span class="theme-toggle__icon theme-toggle__icon--sun">
-          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-            <path d="M0 0h24v24H0z" fill="none" />
-            <path fill="currentColor"
-              d="M12 6a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v2a1 1 0 0 0 1 1m9 5h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2M6 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h2a1 1 0 0 0 1-1m.22-7a1 1 0 0 0-1.39 1.47l1.44 1.39a1 1 0 0 0 .73.28a1 1 0 0 0 .72-.31a1 1 0 0 0 0-1.41ZM17 8.14a1 1 0 0 0 .69-.28l1.44-1.39A1 1 0 0 0 17.78 5l-1.44 1.42a1 1 0 0 0 0 1.41a1 1 0 0 0 .66.31M12 18a1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-1-1m5.73-1.86a1 1 0 0 0-1.39 1.44L17.78 19a1 1 0 0 0 .69.28a1 1 0 0 0 .72-.3a1 1 0 0 0 0-1.42Zm-11.46 0l-1.44 1.39a1 1 0 0 0 0 1.42a1 1 0 0 0 .72.3a1 1 0 0 0 .67-.25l1.44-1.39a1 1 0 0 0-1.39-1.44ZM12 8a4 4 0 1 0 4 4a4 4 0 0 0-4-4" />
-          </svg>
-        </span>
-        <span class="theme-toggle__icon theme-toggle__icon--moon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
-            <path d="M0 0h16v16H0z" fill="none" />
-            <path fill="currentColor" d="M9.571 1.18a7 7 0 1 1-8.39 8.391a6 6 0 1 0 8.39-8.39" />
-          </svg>
-        </span>
-        <button class="theme-toggle__btn" id="themeToggle">
-          <span class="theme-toggle__thumb"></span>
+      <div class="header__settings">
+        <button class="header__burger" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
+        <div class="theme-toggle">
+          <span class="theme-toggle__icon theme-toggle__icon--sun">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path fill="currentColor"
+                d="M12 6a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v2a1 1 0 0 0 1 1m9 5h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2M6 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h2a1 1 0 0 0 1-1m.22-7a1 1 0 0 0-1.39 1.47l1.44 1.39a1 1 0 0 0 .73.28a1 1 0 0 0 .72-.31a1 1 0 0 0 0-1.41ZM17 8.14a1 1 0 0 0 .69-.28l1.44-1.39A1 1 0 0 0 17.78 5l-1.44 1.42a1 1 0 0 0 0 1.41a1 1 0 0 0 .66.31M12 18a1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-1-1m5.73-1.86a1 1 0 0 0-1.39 1.44L17.78 19a1 1 0 0 0 .69.28a1 1 0 0 0 .72-.3a1 1 0 0 0 0-1.42Zm-11.46 0l-1.44 1.39a1 1 0 0 0 0 1.42a1 1 0 0 0 .72.3a1 1 0 0 0 .67-.25l1.44-1.39a1 1 0 0 0-1.39-1.44ZM12 8a4 4 0 1 0 4 4a4 4 0 0 0-4-4" />
+            </svg>
+          </span>
+          <span class="theme-toggle__icon theme-toggle__icon--moon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+              <path d="M0 0h16v16H0z" fill="none" />
+              <path fill="currentColor" d="M9.571 1.18a7 7 0 1 1-8.39 8.391a6 6 0 1 0 8.39-8.39" />
+            </svg>
+          </span>
+          <button class="theme-toggle__btn" id="themeToggle">
+            <span class="theme-toggle__thumb"></span>
+          </button>
+        </div>
       </div>
+
     </header>
 
     <main class="main">
@@ -126,7 +133,7 @@
               <svg class="profit__icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48">
 
                 <defs>
-                  <linearGradient id="profit-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <linearGradient id="profit-gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
                     <stop offset="0%" stop-color="#4FD9D0" />
                     <stop offset="100%" stop-color="#7567F8" />
                   </linearGradient>
@@ -134,7 +141,7 @@
 
                 <path d="M0 0h48v48H0z" fill="none" />
 
-                <g fill="url(#profit-gradient)">
+                <g fill="url(#profit-gradient2)">
                   <path fill-rule="evenodd"
                     d="M14.953 16.63c4.816 1.86 10.603 1.86 15.418-.002a29.3 29.3 0 0 1 5.153 7.487c.872.134 1.707.38 2.49.723c-1.427-3.644-3.841-7.186-6.436-9.838l3.694-5.4a16 16 0 0 0-1.886-1.054C30.946 7.361 27.027 6 22.711 6c-4.406 0-8.431 1.42-10.886 2.621q-.366.18-.684.35c-.427.23-.787.444-1.069.629L13.74 15c-8.59 9.038-14.99 26.997 8.971 26.997a37 37 0 0 0 4.906-.3a10 10 0 0 1-1.713-1.826q-1.472.124-3.193.126c-5.785 0-9.413-1.091-11.58-2.591c-2.075-1.437-2.986-3.37-3.115-5.632c-.134-2.35.585-5.093 1.932-7.87c1.285-2.648 3.079-5.197 5.005-7.274m14.251-1.702l2.958-4.323c-2.75.198-6.023.844-9.173 1.756c-2.25.65-4.749.551-7.065.124a25 25 0 0 1-1.737-.386l1.92 2.827c4.116 1.465 8.982 1.465 13.097.002m-15.4-5.012c.8.238 1.635.445 2.483.602c2.15.396 4.307.454 6.146-.079a54 54 0 0 1 6.53-1.471C27.123 8.414 24.972 8 22.71 8c-3.445 0-6.658.961-8.907 1.916"
                     clip-rule="evenodd" />
@@ -165,7 +172,7 @@
               <svg class="profit__icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48">
 
                 <defs>
-                  <linearGradient id="profit-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <linearGradient id="profit-gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
                     <stop offset="0%" stop-color="#4FD9D0" />
                     <stop offset="100%" stop-color="#7567F8" />
                   </linearGradient>
@@ -173,7 +180,7 @@
 
                 <path d="M0 0h48v48H0z" fill="none" />
 
-                <g fill="url(#profit-gradient)">
+                <g fill="url(#profit-gradient3)">
                   <path fill-rule="evenodd"
                     d="M14.953 16.63c4.816 1.86 10.603 1.86 15.418-.002a29.3 29.3 0 0 1 5.153 7.487c.872.134 1.707.38 2.49.723c-1.427-3.644-3.841-7.186-6.436-9.838l3.694-5.4a16 16 0 0 0-1.886-1.054C30.946 7.361 27.027 6 22.711 6c-4.406 0-8.431 1.42-10.886 2.621q-.366.18-.684.35c-.427.23-.787.444-1.069.629L13.74 15c-8.59 9.038-14.99 26.997 8.971 26.997a37 37 0 0 0 4.906-.3a10 10 0 0 1-1.713-1.826q-1.472.124-3.193.126c-5.785 0-9.413-1.091-11.58-2.591c-2.075-1.437-2.986-3.37-3.115-5.632c-.134-2.35.585-5.093 1.932-7.87c1.285-2.648 3.079-5.197 5.005-7.274m14.251-1.702l2.958-4.323c-2.75.198-6.023.844-9.173 1.756c-2.25.65-4.749.551-7.065.124a25 25 0 0 1-1.737-.386l1.92 2.827c4.116 1.465 8.982 1.465 13.097.002m-15.4-5.012c.8.238 1.635.445 2.483.602c2.15.396 4.307.454 6.146-.079a54 54 0 0 1 6.53-1.471C27.123 8.414 24.972 8 22.71 8c-3.445 0-6.658.961-8.907 1.916"
                     clip-rule="evenodd" />
@@ -204,7 +211,7 @@
               <svg class="profit__icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48">
 
                 <defs>
-                  <linearGradient id="profit-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <linearGradient id="profit-gradient4" x1="0%" y1="0%" x2="100%" y2="100%">
                     <stop offset="0%" stop-color="#4FD9D0" />
                     <stop offset="100%" stop-color="#7567F8" />
                   </linearGradient>
@@ -212,7 +219,7 @@
 
                 <path d="M0 0h48v48H0z" fill="none" />
 
-                <g fill="url(#profit-gradient)">
+                <g fill="url(#profit-gradient4)">
                   <path fill-rule="evenodd"
                     d="M14.953 16.63c4.816 1.86 10.603 1.86 15.418-.002a29.3 29.3 0 0 1 5.153 7.487c.872.134 1.707.38 2.49.723c-1.427-3.644-3.841-7.186-6.436-9.838l3.694-5.4a16 16 0 0 0-1.886-1.054C30.946 7.361 27.027 6 22.711 6c-4.406 0-8.431 1.42-10.886 2.621q-.366.18-.684.35c-.427.23-.787.444-1.069.629L13.74 15c-8.59 9.038-14.99 26.997 8.971 26.997a37 37 0 0 0 4.906-.3a10 10 0 0 1-1.713-1.826q-1.472.124-3.193.126c-5.785 0-9.413-1.091-11.58-2.591c-2.075-1.437-2.986-3.37-3.115-5.632c-.134-2.35.585-5.093 1.932-7.87c1.285-2.648 3.079-5.197 5.005-7.274m14.251-1.702l2.958-4.323c-2.75.198-6.023.844-9.173 1.756c-2.25.65-4.749.551-7.065.124a25 25 0 0 1-1.737-.386l1.92 2.827c4.116 1.465 8.982 1.465 13.097.002m-15.4-5.012c.8.238 1.635.445 2.483.602c2.15.396 4.307.454 6.146-.079a54 54 0 0 1 6.53-1.471C27.123 8.414 24.972 8 22.71 8c-3.445 0-6.658.961-8.907 1.916"
                     clip-rule="evenodd" />
@@ -371,7 +378,7 @@
         <a href="#header" class="footer__link">
           Наверх
         </a>
-        <a href="#catalog" class="footer__link">
+        <a href="catalog.html" class="footer__link">
           Инвестиции
         </a>
         <a href="#about" class="footer__link">
@@ -381,7 +388,7 @@
 
       <ul class="contacts">
         <li class="contacts__item">
-          <a href="" class="contacts__link">
+          <a href="tel:+375333146665" class="contacts__link">
             <svg class="contacts__icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
               <path d="M0 0h24v24H0z" fill="none" />
               <path fill="currentColor"
@@ -391,7 +398,7 @@
           </a>
         </li>
         <li class="contacts__item">
-          <a href="" class="contacts__link">
+          <a href="mailto:info@weltia.com" class="contacts__link">
             <svg class="contacts__icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20">
               <path d="M0 0h20v20H0z" fill="none" />
               <path fill="currentColor"
@@ -401,7 +408,8 @@
           </a>
         </li>
         <li class="contacts__item">
-          <a href="" class="contacts__link">
+          <a href="https://www.google.com/maps/search/?api=1&query=Minsk%2C%20Belarus" target="_blank"
+            rel="noopener noreferrer" class="contacts__link">
             <svg class="contacts__icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
               viewBox="0 0 1408 1408">
               <path d="M0 0h1408v1408H0z" fill="none" />
@@ -414,7 +422,7 @@
       </ul>
 
       <div class="socials">
-        <a href="" class="socials__item">
+        <a href="https://t.me/anagronn" target="_blank" rel="noopener noreferrer" class="socials__item">
           <svg class="socials__icon" xmlns="http://www.w3.org/2000/svg" width="0.88em" height="1em"
             viewBox="0 0 448 512">
             <path d="M0 0h448v512H0z" fill="none" />
@@ -422,8 +430,8 @@
               d="m446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9l-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9l190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284L16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2" />
           </svg>
         </a>
-        <a href="" class="socials__item">
-          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+        <a href="https://www.instagram.com/anagronn" target="_blank" rel="noopener noreferrer" class="socials__item">
+          <svg class="socials__icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
             <path d="M0 0h24v24H0z" fill="none" />
             <path fill="currentColor" fill-rule="evenodd"
               d="M7.465 1.066C8.638 1.012 9.012 1 12 1s3.362.013 4.534.066s1.972.24 2.672.511c.733.277 1.398.71 1.948 1.27c.56.549.992 1.213 1.268 1.947c.272.7.458 1.5.512 2.67C22.988 8.639 23 9.013 23 12s-.013 3.362-.066 4.535c-.053 1.17-.24 1.97-.512 2.67a5.4 5.4 0 0 1-1.268 1.949c-.55.56-1.215.992-1.948 1.268c-.7.272-1.5.458-2.67.512c-1.174.054-1.548.066-4.536.066s-3.362-.013-4.535-.066c-1.17-.053-1.97-.24-2.67-.512a5.4 5.4 0 0 1-1.949-1.268a5.4 5.4 0 0 1-1.269-1.948c-.271-.7-.457-1.5-.511-2.67C1.012 15.361 1 14.987 1 12s.013-3.362.066-4.534s.24-1.972.511-2.672a5.4 5.4 0 0 1 1.27-1.948a5.4 5.4 0 0 1 1.947-1.269c.7-.271 1.5-.457 2.67-.511m8.98 1.98c-1.16-.053-1.508-.064-4.445-.064s-3.285.011-4.445.064c-1.073.049-1.655.228-2.043.379c-.513.2-.88.437-1.265.822a3.4 3.4 0 0 0-.822 1.265c-.151.388-.33.97-.379 2.043c-.053 1.16-.064 1.508-.064 4.445s.011 3.285.064 4.445c.049 1.073.228 1.655.379 2.043c.176.477.457.91.822 1.265c.355.365.788.646 1.265.822c.388.151.97.33 2.043.379c1.16.053 1.507.064 4.445.064s3.285-.011 4.445-.064c1.073-.049 1.655-.228 2.043-.379c.513-.2.88-.437 1.265-.822c.365-.355.646-.788.822-1.265c.151-.388.33-.97.379-2.043c.053-1.16.064-1.508.064-4.445s-.011-3.285-.064-4.445c-.049-1.073-.228-1.655-.379-2.043c-.2-.513-.437-.88-.822-1.265a3.4 3.4 0 0 0-1.265-.822c-.388-.151-.97-.33-2.043-.379m-5.85 12.345a3.669 3.669 0 0 0 4-5.986a3.67 3.67 0 1 0-4 5.986M8.002 8.002a5.654 5.654 0 1 1 7.996 7.996a5.654 5.654 0 0 1-7.996-7.996m10.906-.814a1.337 1.337 0 1 0-1.89-1.89a1.337 1.337 0 0 0 1.89 1.89"

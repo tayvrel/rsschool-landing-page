@@ -21,7 +21,7 @@
         <a href="./index.html" class="header__link">
           Главная
         </a>
-        <a href="" class="header__link header__link--active">
+        <a href="javascript:void(0)" class="header__link header__link--active">
           Инвестиции
         </a>
         <a href="./index.html#about" class="header__link">
@@ -32,24 +32,30 @@
         </a>
       </nav>
 
-
-      <div class="theme-toggle">
-        <span class="theme-toggle__icon theme-toggle__icon--sun">
-          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-            <path d="M0 0h24v24H0z" fill="none" />
-            <path fill="currentColor"
-              d="M12 6a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v2a1 1 0 0 0 1 1m9 5h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2M6 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h2a1 1 0 0 0 1-1m.22-7a1 1 0 0 0-1.39 1.47l1.44 1.39a1 1 0 0 0 .73.28a1 1 0 0 0 .72-.31a1 1 0 0 0 0-1.41ZM17 8.14a1 1 0 0 0 .69-.28l1.44-1.39A1 1 0 0 0 17.78 5l-1.44 1.42a1 1 0 0 0 0 1.41a1 1 0 0 0 .66.31M12 18a1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-1-1m5.73-1.86a1 1 0 0 0-1.39 1.44L17.78 19a1 1 0 0 0 .69.28a1 1 0 0 0 .72-.3a1 1 0 0 0 0-1.42Zm-11.46 0l-1.44 1.39a1 1 0 0 0 0 1.42a1 1 0 0 0 .72.3a1 1 0 0 0 .67-.25l1.44-1.39a1 1 0 0 0-1.39-1.44ZM12 8a4 4 0 1 0 4 4a4 4 0 0 0-4-4" />
-          </svg>
-        </span>
-        <span class="theme-toggle__icon theme-toggle__icon--moon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
-            <path d="M0 0h16v16H0z" fill="none" />
-            <path fill="currentColor" d="M9.571 1.18a7 7 0 1 1-8.39 8.391a6 6 0 1 0 8.39-8.39" />
-          </svg>
-        </span>
-        <button class="theme-toggle__btn" id="themeToggle">
-          <span class="theme-toggle__thumb"></span>
+      <div class="header__settings">
+        <button class="header__burger" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
+        <div class="theme-toggle">
+          <span class="theme-toggle__icon theme-toggle__icon--sun">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path fill="currentColor"
+                d="M12 6a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v2a1 1 0 0 0 1 1m9 5h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2M6 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h2a1 1 0 0 0 1-1m.22-7a1 1 0 0 0-1.39 1.47l1.44 1.39a1 1 0 0 0 .73.28a1 1 0 0 0 .72-.31a1 1 0 0 0 0-1.41ZM17 8.14a1 1 0 0 0 .69-.28l1.44-1.39A1 1 0 0 0 17.78 5l-1.44 1.42a1 1 0 0 0 0 1.41a1 1 0 0 0 .66.31M12 18a1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-1-1m5.73-1.86a1 1 0 0 0-1.39 1.44L17.78 19a1 1 0 0 0 .69.28a1 1 0 0 0 .72-.3a1 1 0 0 0 0-1.42Zm-11.46 0l-1.44 1.39a1 1 0 0 0 0 1.42a1 1 0 0 0 .72.3a1 1 0 0 0 .67-.25l1.44-1.39a1 1 0 0 0-1.39-1.44ZM12 8a4 4 0 1 0 4 4a4 4 0 0 0-4-4" />
+            </svg>
+          </span>
+          <span class="theme-toggle__icon theme-toggle__icon--moon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+              <path d="M0 0h16v16H0z" fill="none" />
+              <path fill="currentColor" d="M9.571 1.18a7 7 0 1 1-8.39 8.391a6 6 0 1 0 8.39-8.39" />
+            </svg>
+          </span>
+          <button class="theme-toggle__btn" id="themeToggle">
+            <span class="theme-toggle__thumb"></span>
+          </button>
+        </div>
       </div>
     </header>
 
@@ -66,7 +72,7 @@
           <img src="./assets/hero.png" alt="hero-charts">
         </div>
       </section>
-      <section class="catalog">
+      <section class="catalog" id="catalog">
         <div class="catalog__categories">
           <button class="catalog__category catalog__category--active" type="button" data-category="all">
             <svg class="catalog__icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48">
@@ -74,7 +80,7 @@
               <path fill="currentColor" stroke="currentColor" stroke-linejoin="round" stroke-width="4"
                 d="M18 6H8a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2Zm0 22H8a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V30a2 2 0 0 0-2-2ZM40 6H30a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2Zm0 22H30a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V30a2 2 0 0 0-2-2Z" />
             </svg>
-            <p>Все</p>
+            Все
           </button>
           <button class="catalog__category card" type="button" data-category="all">
             <svg class="catalog__icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
@@ -82,8 +88,7 @@
               <path fill="currentColor"
                 d="m6 16.5l-3 2.94V11h3m5 3.66l-1.57-1.34L8 14.64V7h3m5 6l-3 3V3h3m2.81 9.81L17 11h5v5l-1.79-1.79L13 21.36l-3.47-3.02L5.75 22H3l6.47-6.34L13 18.64" />
             </svg>
-
-            <p>Акции</p>
+            Акции
           </button>
           <button class="catalog__category card" type="button" data-category="all">
             <svg class="catalog__icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
@@ -93,8 +98,7 @@
                 d="M21 19a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2V9a1 1 0 0 1 0-2h18a1 1 0 1 1 0 2zM6 19h2v-7a1 1 0 1 0-2 0zm5 0h2v-7a1 1 0 1 0-2 0zm5 0h2v-7a1 1 0 1 0-2 0z"
                 clip-rule="evenodd" />
             </svg>
-
-            <p>Облигации</p>
+            Облигации
           </button>
           <button class="catalog__category card" type="button" data-category="all">
             <svg class="catalog__icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
@@ -103,8 +107,7 @@
               <path fill="currentColor"
                 d="m905.9 806.7l-40.2-248c-.6-3.9-4-6.7-7.9-6.7H596.2c-3.9 0-7.3 2.8-7.9 6.7l-40.2 248c-.1.4-.1.9-.1 1.3c0 4.4 3.6 8 8 8h342c.4 0 .9 0 1.3-.1c4.3-.7 7.3-4.8 6.6-9.2m-470.2-248c-.6-3.9-4-6.7-7.9-6.7H166.2c-3.9 0-7.3 2.8-7.9 6.7l-40.2 248c-.1.4-.1.9-.1 1.3c0 4.4 3.6 8 8 8h342c.4 0 .9 0 1.3-.1c4.4-.7 7.3-4.8 6.6-9.2zM342 472h342c.4 0 .9 0 1.3-.1c4.4-.7 7.3-4.8 6.6-9.2l-40.2-248c-.6-3.9-4-6.7-7.9-6.7H382.2c-3.9 0-7.3 2.8-7.9 6.7l-40.2 248c-.1.4-.1.9-.1 1.3c0 4.4 3.6 8 8 8" />
             </svg>
-
-            <p>Золото</p>
+            Золото
           </button>
           <button class="catalog__category card" type="button" data-category="all">
             <svg class="catalog__icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
@@ -112,8 +115,7 @@
               <path fill="currentColor"
                 d="M2 22v-2s5-2 10-2s10 2 10 2v2zm9.3-12.9c-1.2-3.9-7.3-3-7.3-3s.2 7.8 5.9 6.6C9.5 9.8 8 9 8 9c2.8 0 3 3.4 3 3.4V17h2v-4.2s0-3.9 3-4.9c0 0-2 3-2 5c7 .7 7-8.9 7-8.9s-8.9-1-9.7 5.1" />
             </svg>
-
-            <p>ESG</p>
+            ESG
           </button>
         </div>
         <div class="catalog__catalog-grid">
@@ -131,9 +133,9 @@
                   </svg>
                 </div>
                 <div class="investment-card__heading">
-                  <h3 class="investment-card__name">
+                  <h2 class="investment-card__name">
                     Apple
-                  </h3>
+                  </h2>
                   <span class="investment-card__ticker">
                     AAPL
                   </span>
@@ -180,9 +182,9 @@
                   </svg>
                 </div>
                 <div class="investment-card__heading">
-                  <h3 class="investment-card__name">
+                  <h2 class="investment-card__name">
                     Apple
-                  </h3>
+                  </h2>
                   <span class="investment-card__ticker">
                     AAPL
                   </span>
@@ -229,9 +231,9 @@
                   </svg>
                 </div>
                 <div class="investment-card__heading">
-                  <h3 class="investment-card__name">
+                  <h2 class="investment-card__name">
                     Apple
-                  </h3>
+                  </h2>
                   <span class="investment-card__ticker">
                     AAPL
                   </span>
@@ -278,9 +280,9 @@
                   </svg>
                 </div>
                 <div class="investment-card__heading">
-                  <h3 class="investment-card__name">
+                  <h2 class="investment-card__name">
                     Apple
-                  </h3>
+                  </h2>
                   <span class="investment-card__ticker">
                     AAPL
                   </span>
@@ -327,9 +329,9 @@
                   </svg>
                 </div>
                 <div class="investment-card__heading">
-                  <h3 class="investment-card__name">
+                  <h2 class="investment-card__name">
                     Apple
-                  </h3>
+                  </h2>
                   <span class="investment-card__ticker">
                     AAPL
                   </span>
@@ -376,9 +378,9 @@
                   </svg>
                 </div>
                 <div class="investment-card__heading">
-                  <h3 class="investment-card__name">
+                  <h2 class="investment-card__name">
                     Apple
-                  </h3>
+                  </h2>
                   <span class="investment-card__ticker">
                     AAPL
                   </span>
@@ -425,9 +427,9 @@
                   </svg>
                 </div>
                 <div class="investment-card__heading">
-                  <h3 class="investment-card__name">
+                  <h2 class="investment-card__name">
                     Apple
-                  </h3>
+                  </h2>
                   <span class="investment-card__ticker">
                     AAPL
                   </span>
@@ -474,9 +476,9 @@
                   </svg>
                 </div>
                 <div class="investment-card__heading">
-                  <h3 class="investment-card__name">
+                  <h2 class="investment-card__name">
                     Apple
-                  </h3>
+                  </h2>
                   <span class="investment-card__ticker">
                     AAPL
                   </span>
@@ -523,9 +525,9 @@
                   </svg>
                 </div>
                 <div class="investment-card__heading">
-                  <h3 class="investment-card__name">
+                  <h2 class="investment-card__name">
                     Apple
-                  </h3>
+                  </h2>
                   <span class="investment-card__ticker">
                     AAPL
                   </span>
@@ -572,9 +574,9 @@
                   </svg>
                 </div>
                 <div class="investment-card__heading">
-                  <h3 class="investment-card__name">
+                  <h2 class="investment-card__name">
                     Apple
-                  </h3>
+                  </h2>
                   <span class="investment-card__ticker">
                     AAPL
                   </span>
@@ -621,9 +623,9 @@
                   </svg>
                 </div>
                 <div class="investment-card__heading">
-                  <h3 class="investment-card__name">
+                  <h2 class="investment-card__name">
                     Apple
-                  </h3>
+                  </h2>
                   <span class="investment-card__ticker">
                     AAPL
                   </span>
@@ -670,9 +672,9 @@
                   </svg>
                 </div>
                 <div class="investment-card__heading">
-                  <h3 class="investment-card__name">
+                  <h2 class="investment-card__name">
                     Apple
-                  </h3>
+                  </h2>
                   <span class="investment-card__ticker">
                     AAPL
                   </span>
@@ -732,14 +734,14 @@
         <a href="#catalog" class="footer__link">
           Инвестиции
         </a>
-        <a href="#about" class="footer__link">
+        <a href="./index.html#about" class="footer__link">
           О платформе
         </a>
       </nav>
 
       <ul class="contacts">
         <li class="contacts__item">
-          <a href="" class="contacts__link">
+          <a href="tel:+375333146665" class="contacts__link">
             <svg class="contacts__icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
               <path d="M0 0h24v24H0z" fill="none" />
               <path fill="currentColor"
@@ -749,7 +751,7 @@
           </a>
         </li>
         <li class="contacts__item">
-          <a href="" class="contacts__link">
+          <a href="mailto:info@weltia.com" class="contacts__link">
             <svg class="contacts__icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20">
               <path d="M0 0h20v20H0z" fill="none" />
               <path fill="currentColor"
@@ -759,7 +761,8 @@
           </a>
         </li>
         <li class="contacts__item">
-          <a href="" class="contacts__link">
+          <a href="https://www.google.com/maps/search/?api=1&query=Minsk%2C%20Belarus" target="_blank"
+            rel="noopener noreferrer" class="contacts__link">
             <svg class="contacts__icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
               viewBox="0 0 1408 1408">
               <path d="M0 0h1408v1408H0z" fill="none" />
@@ -772,7 +775,7 @@
       </ul>
 
       <div class="socials">
-        <a href="" class="socials__item">
+        <a href="https://t.me/anagronn" target="_blank" rel="noopener noreferrer" class="socials__item">
           <svg class="socials__icon" xmlns="http://www.w3.org/2000/svg" width="0.88em" height="1em"
             viewBox="0 0 448 512">
             <path d="M0 0h448v512H0z" fill="none" />
@@ -780,8 +783,8 @@
               d="m446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9l-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9l190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284L16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2" />
           </svg>
         </a>
-        <a href="" class="socials__item">
-          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+        <a href="https://www.instagram.com/anagronn" target="_blank" rel="noopener noreferrer" class="socials__item">
+          <svg class="socials__icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
             <path d="M0 0h24v24H0z" fill="none" />
             <path fill="currentColor" fill-rule="evenodd"
               d="M7.465 1.066C8.638 1.012 9.012 1 12 1s3.362.013 4.534.066s1.972.24 2.672.511c.733.277 1.398.71 1.948 1.27c.56.549.992 1.213 1.268 1.947c.272.7.458 1.5.512 2.67C22.988 8.639 23 9.013 23 12s-.013 3.362-.066 4.535c-.053 1.17-.24 1.97-.512 2.67a5.4 5.4 0 0 1-1.268 1.949c-.55.56-1.215.992-1.948 1.268c-.7.272-1.5.458-2.67.512c-1.174.054-1.548.066-4.536.066s-3.362-.013-4.535-.066c-1.17-.053-1.97-.24-2.67-.512a5.4 5.4 0 0 1-1.949-1.268a5.4 5.4 0 0 1-1.269-1.948c-.271-.7-.457-1.5-.511-2.67C1.012 15.361 1 14.987 1 12s.013-3.362.066-4.534s.24-1.972.511-2.672a5.4 5.4 0 0 1 1.27-1.948a5.4 5.4 0 0 1 1.947-1.269c.7-.271 1.5-.457 2.67-.511m8.98 1.98c-1.16-.053-1.508-.064-4.445-.064s-3.285.011-4.445.064c-1.073.049-1.655.228-2.043.379c-.513.2-.88.437-1.265.822a3.4 3.4 0 0 0-.822 1.265c-.151.388-.33.97-.379 2.043c-.053 1.16-.064 1.508-.064 4.445s.011 3.285.064 4.445c.049 1.073.228 1.655.379 2.043c.176.477.457.91.822 1.265c.355.365.788.646 1.265.822c.388.151.97.33 2.043.379c1.16.053 1.507.064 4.445.064s3.285-.011 4.445-.064c1.073-.049 1.655-.228 2.043-.379c.513-.2.88-.437 1.265-.822c.365-.355.646-.788.822-1.265c.151-.388.33-.97.379-2.043c.053-1.16.064-1.508.064-4.445s-.011-3.285-.064-4.445c-.049-1.073-.228-1.655-.379-2.043c-.2-.513-.437-.88-.822-1.265a3.4 3.4 0 0 0-1.265-.822c-.388-.151-.97-.33-2.043-.379m-5.85 12.345a3.669 3.669 0 0 0 4-5.986a3.67 3.67 0 1 0-4 5.986M8.002 8.002a5.654 5.654 0 1 1 7.996 7.996a5.654 5.654 0 0 1-7.996-7.996m10.906-.814a1.337 1.337 0 1 0-1.89-1.89a1.337 1.337 0 0 0 1.89 1.89"
