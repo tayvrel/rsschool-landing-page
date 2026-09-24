@@ -79,3 +79,45 @@ prevButton.addEventListener('click', () => {
 
 window.addEventListener('resize', updateSlider);
 updateSlider();
+
+//counter
+const counter = document.querySelector('#counter');
+const counterContainer = document.querySelector('.about__counter');
+
+const target = 50;
+const duration = 1400;
+
+function startCounter() {
+  const startTime = performance.now();
+  function updateCounter(currentTime) {
+    const progress = Math.min(
+      (currentTime - startTime) / duration,
+      1
+    );
+    const currentValue = Math.floor(progress * target);
+    counter.textContent = currentValue;
+    if (progress < 1) {
+      requestAnimationFrame(updateCounter);
+    } else {
+      counter.textContent = target;
+      counterContainer.classList.add('is-finished');
+    }
+  }
+  requestAnimationFrame(updateCounter);
+}
+
+const counterObserver = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        startCounter();
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  {
+    threshold: 0.5
+  }
+);
+
+counterObserver.observe(counter);
