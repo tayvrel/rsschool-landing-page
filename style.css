@@ -416,11 +416,6 @@ p {
   transform: translateY(-2px);
 }
 
-.slider__button:disabled {
-  opacity: 0.35;
-  pointer-events: none;
-}
-
 .slider__track {
   display: flex;
   gap: 24px;

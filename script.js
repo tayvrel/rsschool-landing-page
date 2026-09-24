@@ -15,8 +15,7 @@ themeToggle.addEventListener('click', () => {
   localStorage.setItem('theme', newTheme);
 });
 
-
-//slider
+// slider
 const slider = document.querySelector('.slider');
 const track = slider.querySelector('.slider__track');
 const slides = [...slider.querySelectorAll('.slider__slide')];
@@ -41,43 +40,51 @@ function getStep() {
 function getVisibleSlides() {
   const slideWidth = getSlideWidth();
   const gap = getGap();
-  return Math.max(
-    1,
-    Math.floor((slider.clientWidth + gap) / (slideWidth + gap))
+  return Math.max(1,
+    Math.floor(
+      (slider.clientWidth + gap) / (slideWidth + gap)
+    )
   );
 }
 
 function getMaxIndex() {
-  return Math.max(
-    0,
+  return Math.max(0,
     slides.length - getVisibleSlides()
   );
 }
 
 function updateSlider() {
-  const maxIndex = getMaxIndex();
-  currentIndex = Math.min(currentIndex, maxIndex);
   track.style.transform = `translateX(-${currentIndex * getStep()}px)`;
-  prevButton.disabled = currentIndex === 0;
-  nextButton.disabled = currentIndex === maxIndex;
 }
 
 nextButton.addEventListener('click', () => {
   const maxIndex = getMaxIndex();
   if (currentIndex < maxIndex) {
     currentIndex++;
-    updateSlider();
+  } else {
+    currentIndex = 0;
   }
+  updateSlider();
 });
 
 prevButton.addEventListener('click', () => {
+  const maxIndex = getMaxIndex();
   if (currentIndex > 0) {
     currentIndex--;
-    updateSlider();
+  } else {
+    currentIndex = maxIndex;
   }
+  updateSlider();
 });
 
-window.addEventListener('resize', updateSlider);
+window.addEventListener('resize', () => {
+  const maxIndex = getMaxIndex();
+  if (currentIndex > maxIndex) {
+    currentIndex = maxIndex;
+  }
+  updateSlider();
+});
+
 updateSlider();
 
 //counter
