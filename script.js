@@ -15,116 +15,52 @@ themeToggle.addEventListener('click', () => {
   localStorage.setItem('theme', newTheme);
 });
 
-// slider
-const slider = document.querySelector('.slider');
-const track = slider.querySelector('.slider__track');
-const slides = [...slider.querySelectorAll('.slider__slide')];
+const burger = document.querySelector('.header__burger');
+const nav = document.querySelector('.header__nav');
+const navLinks = document.querySelectorAll('.header__link');
 
-const prevButton = slider.querySelector('.slider__button--prev');
-const nextButton = slider.querySelector('.slider__button--next');
+function openMenu() {
+  burger.classList.add('header__burger--open');
+  nav.classList.add('header__nav--open');
 
-let currentIndex = 0;
+  burger.setAttribute('aria-expanded', 'true');
+  burger.setAttribute('aria-label', 'Закрыть меню');
 
-function getGap() {
-  return parseFloat(getComputedStyle(track).gap) || 0;
+  document.body.style.overflow = 'hidden';
 }
 
-function getSlideWidth() {
-  return slides[0].getBoundingClientRect().width;
+function closeMenu() {
+  burger.classList.remove('header__burger--open');
+  nav.classList.remove('header__nav--open');
+
+  burger.setAttribute('aria-expanded', 'false');
+  burger.setAttribute('aria-label', 'Открыть меню');
+
+  document.body.style.overflow = '';
 }
 
-function getStep() {
-  return getSlideWidth() + getGap();
-}
+burger.addEventListener('click', () => {
+  const isOpen = nav.classList.contains('header__nav--open');
 
-function getVisibleSlides() {
-  const slideWidth = getSlideWidth();
-  const gap = getGap();
-  return Math.max(1,
-    Math.floor(
-      (slider.clientWidth + gap) / (slideWidth + gap)
-    )
-  );
-}
-
-function getMaxIndex() {
-  return Math.max(0,
-    slides.length - getVisibleSlides()
-  );
-}
-
-function updateSlider() {
-  track.style.transform = `translateX(-${currentIndex * getStep()}px)`;
-}
-
-nextButton.addEventListener('click', () => {
-  const maxIndex = getMaxIndex();
-  if (currentIndex < maxIndex) {
-    currentIndex++;
+  if (isOpen) {
+    closeMenu();
   } else {
-    currentIndex = 0;
+    openMenu();
   }
-  updateSlider();
 });
 
-prevButton.addEventListener('click', () => {
-  const maxIndex = getMaxIndex();
-  if (currentIndex > 0) {
-    currentIndex--;
-  } else {
-    currentIndex = maxIndex;
+navLinks.forEach((link) => {
+  link.addEventListener('click', closeMenu);
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    closeMenu();
   }
-  updateSlider();
 });
 
 window.addEventListener('resize', () => {
-  const maxIndex = getMaxIndex();
-  if (currentIndex > maxIndex) {
-    currentIndex = maxIndex;
+  if (window.innerWidth >= 769) {
+    closeMenu();
   }
-  updateSlider();
 });
-
-updateSlider();
-
-//counter
-const counter = document.querySelector('#counter');
-const counterContainer = document.querySelector('.about__counter');
-
-const target = 50;
-const duration = 1400;
-
-function startCounter() {
-  const startTime = performance.now();
-  function updateCounter(currentTime) {
-    const progress = Math.min(
-      (currentTime - startTime) / duration,
-      1
-    );
-    const currentValue = Math.floor(progress * target);
-    counter.textContent = currentValue;
-    if (progress < 1) {
-      requestAnimationFrame(updateCounter);
-    } else {
-      counter.textContent = target;
-      counterContainer.classList.add('is-finished');
-    }
-  }
-  requestAnimationFrame(updateCounter);
-}
-
-const counterObserver = new IntersectionObserver(
-  (entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        startCounter();
-        observer.unobserve(entry.target);
-      }
-    });
-  },
-  {
-    threshold: 0.5
-  }
-);
-
-counterObserver.observe(counter);
