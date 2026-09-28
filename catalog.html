@@ -74,7 +74,7 @@
       </section>
       <section class="catalog" id="catalog">
         <div class="catalog__categories">
-          <button class="catalog__category catalog__category--active" type="button" data-category="all">
+          <button class="catalog__category card catalog__category--active" type="button" data-category="all">
             <svg class="catalog__icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48">
               <path d="M0 0h48v48H0z" fill="none" />
               <path fill="currentColor" stroke="currentColor" stroke-linejoin="round" stroke-width="4"
@@ -82,7 +82,7 @@
             </svg>
             Все
           </button>
-          <button class="catalog__category card" type="button" data-category="all">
+          <button class="catalog__category card" type="button" data-category="stocks">
             <svg class="catalog__icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
               <path d="M0 0h24v24H0z" fill="none" />
               <path fill="currentColor"
@@ -90,7 +90,7 @@
             </svg>
             Акции
           </button>
-          <button class="catalog__category card" type="button" data-category="all">
+          <button class="catalog__category card" type="button" data-category="bonds">
             <svg class="catalog__icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
               <path d="M0 0h24v24H0z" fill="none" />
               <path fill="currentColor" d="M5 5a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1" />
@@ -100,7 +100,7 @@
             </svg>
             Облигации
           </button>
-          <button class="catalog__category card" type="button" data-category="all">
+          <button class="catalog__category card" type="button" data-category="gold">
             <svg class="catalog__icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
               viewBox="0 0 1024 1024">
               <path d="M0 0h1024v1024H0z" fill="none" />
@@ -109,7 +109,7 @@
             </svg>
             Золото
           </button>
-          <button class="catalog__category card" type="button" data-category="all">
+          <button class="catalog__category card" type="button" data-category="esg">
             <svg class="catalog__icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
               <path d="M0 0h24v24H0z" fill="none" />
               <path fill="currentColor"
@@ -119,594 +119,7 @@
           </button>
         </div>
         <div class="catalog__catalog-grid">
-          <div class="investment-card" data-category="stocks">
-            <span class="investment-card__category investment-card__category--stocks">
-              Акции
-            </span>
-            <div class="investment-card__header">
-              <div class="investment-card__about">
-                <div class="investment-card__icon card">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024">
-                    <path d="M0 0h1024v1024H0z" fill="none" />
-                    <path fill="currentColor"
-                      d="M747.4 535.7c-.4-68.2 30.5-119.6 92.9-157.5c-34.9-50-87.7-77.5-157.3-82.8c-65.9-5.2-138 38.4-164.4 38.4c-27.9 0-91.7-36.6-141.9-36.6C273.1 298.8 163 379.8 163 544.6c0 48.7 8.9 99 26.7 150.8c23.8 68.2 109.6 235.3 199.1 232.6c46.8-1.1 79.9-33.2 140.8-33.2c59.1 0 89.7 33.2 141.9 33.2c90.3-1.3 167.9-153.2 190.5-221.6c-121.1-57.1-114.6-167.2-114.6-170.7m-105.1-305c50.7-60.2 46.1-115 44.6-134.7c-44.8 2.6-96.6 30.5-126.1 64.8c-32.5 36.8-51.6 82.3-47.5 133.6c48.4 3.7 92.6-21.2 129-63.7" />
-                  </svg>
-                </div>
-                <div class="investment-card__heading">
-                  <h2 class="investment-card__name">
-                    Apple
-                  </h2>
-                  <span class="investment-card__ticker">
-                    AAPL
-                  </span>
-                </div>
-              </div>
-              <button class="investment-card__favorite" type="button" aria-label="Добавить в избранное">
-                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.99.99 0 0 0 1.024 0C21.126 15.395 22 10.157 22 7.95C22 5.216 19.761 3 17 3s-5 3-5 3s-2.239-3-5-3" />
-                </svg>
-              </button>
-            </div>
-            <div class="investment-card__content">
-              <p class="investment-card__description">
-                Технологии и электроника
-              </p>
-              <div class="investment-card__price">
-                <span>$331.34</span>
-                <small>USD / акция</small>
-              </div>
-              <div class="investment-card__footer">
-                <div class="investment-card__change investment-card__change--positive">
-                  +1.24%
-                  <span>24ч</span>
-                </div>
-              </div>
-            </div>
-            <span class="investment-card__risk investment-card__risk--low">
-              Средний риск
-            </span>
-          </div>
-          <div class="investment-card" data-category="stocks">
-            <span class="investment-card__category investment-card__category--stocks">
-              Акции
-            </span>
-            <div class="investment-card__header">
-              <div class="investment-card__about">
-                <div class="investment-card__icon card">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024">
-                    <path d="M0 0h1024v1024H0z" fill="none" />
-                    <path fill="currentColor"
-                      d="M747.4 535.7c-.4-68.2 30.5-119.6 92.9-157.5c-34.9-50-87.7-77.5-157.3-82.8c-65.9-5.2-138 38.4-164.4 38.4c-27.9 0-91.7-36.6-141.9-36.6C273.1 298.8 163 379.8 163 544.6c0 48.7 8.9 99 26.7 150.8c23.8 68.2 109.6 235.3 199.1 232.6c46.8-1.1 79.9-33.2 140.8-33.2c59.1 0 89.7 33.2 141.9 33.2c90.3-1.3 167.9-153.2 190.5-221.6c-121.1-57.1-114.6-167.2-114.6-170.7m-105.1-305c50.7-60.2 46.1-115 44.6-134.7c-44.8 2.6-96.6 30.5-126.1 64.8c-32.5 36.8-51.6 82.3-47.5 133.6c48.4 3.7 92.6-21.2 129-63.7" />
-                  </svg>
-                </div>
-                <div class="investment-card__heading">
-                  <h2 class="investment-card__name">
-                    Apple
-                  </h2>
-                  <span class="investment-card__ticker">
-                    AAPL
-                  </span>
-                </div>
-              </div>
-              <button class="investment-card__favorite" type="button" aria-label="Добавить в избранное">
-                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.99.99 0 0 0 1.024 0C21.126 15.395 22 10.157 22 7.95C22 5.216 19.761 3 17 3s-5 3-5 3s-2.239-3-5-3" />
-                </svg>
-              </button>
-            </div>
-            <div class="investment-card__content">
-              <p class="investment-card__description">
-                Технологии и электроника
-              </p>
-              <div class="investment-card__price">
-                <span>$331.34</span>
-                <small>USD / акция</small>
-              </div>
-              <div class="investment-card__footer">
-                <div class="investment-card__change investment-card__change--positive">
-                  +1.24%
-                  <span>24ч</span>
-                </div>
-              </div>
-            </div>
-            <span class="investment-card__risk investment-card__risk--low">
-              Средний риск
-            </span>
-          </div>
-          <div class="investment-card" data-category="stocks">
-            <span class="investment-card__category investment-card__category--stocks">
-              Акции
-            </span>
-            <div class="investment-card__header">
-              <div class="investment-card__about">
-                <div class="investment-card__icon card">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024">
-                    <path d="M0 0h1024v1024H0z" fill="none" />
-                    <path fill="currentColor"
-                      d="M747.4 535.7c-.4-68.2 30.5-119.6 92.9-157.5c-34.9-50-87.7-77.5-157.3-82.8c-65.9-5.2-138 38.4-164.4 38.4c-27.9 0-91.7-36.6-141.9-36.6C273.1 298.8 163 379.8 163 544.6c0 48.7 8.9 99 26.7 150.8c23.8 68.2 109.6 235.3 199.1 232.6c46.8-1.1 79.9-33.2 140.8-33.2c59.1 0 89.7 33.2 141.9 33.2c90.3-1.3 167.9-153.2 190.5-221.6c-121.1-57.1-114.6-167.2-114.6-170.7m-105.1-305c50.7-60.2 46.1-115 44.6-134.7c-44.8 2.6-96.6 30.5-126.1 64.8c-32.5 36.8-51.6 82.3-47.5 133.6c48.4 3.7 92.6-21.2 129-63.7" />
-                  </svg>
-                </div>
-                <div class="investment-card__heading">
-                  <h2 class="investment-card__name">
-                    Apple
-                  </h2>
-                  <span class="investment-card__ticker">
-                    AAPL
-                  </span>
-                </div>
-              </div>
-              <button class="investment-card__favorite" type="button" aria-label="Добавить в избранное">
-                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.99.99 0 0 0 1.024 0C21.126 15.395 22 10.157 22 7.95C22 5.216 19.761 3 17 3s-5 3-5 3s-2.239-3-5-3" />
-                </svg>
-              </button>
-            </div>
-            <div class="investment-card__content">
-              <p class="investment-card__description">
-                Технологии и электроника
-              </p>
-              <div class="investment-card__price">
-                <span>$331.34</span>
-                <small>USD / акция</small>
-              </div>
-              <div class="investment-card__footer">
-                <div class="investment-card__change investment-card__change--positive">
-                  +1.24%
-                  <span>24ч</span>
-                </div>
-              </div>
-            </div>
-            <span class="investment-card__risk investment-card__risk--low">
-              Средний риск
-            </span>
-          </div>
-          <div class="investment-card" data-category="stocks">
-            <span class="investment-card__category investment-card__category--stocks">
-              Акции
-            </span>
-            <div class="investment-card__header">
-              <div class="investment-card__about">
-                <div class="investment-card__icon card">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024">
-                    <path d="M0 0h1024v1024H0z" fill="none" />
-                    <path fill="currentColor"
-                      d="M747.4 535.7c-.4-68.2 30.5-119.6 92.9-157.5c-34.9-50-87.7-77.5-157.3-82.8c-65.9-5.2-138 38.4-164.4 38.4c-27.9 0-91.7-36.6-141.9-36.6C273.1 298.8 163 379.8 163 544.6c0 48.7 8.9 99 26.7 150.8c23.8 68.2 109.6 235.3 199.1 232.6c46.8-1.1 79.9-33.2 140.8-33.2c59.1 0 89.7 33.2 141.9 33.2c90.3-1.3 167.9-153.2 190.5-221.6c-121.1-57.1-114.6-167.2-114.6-170.7m-105.1-305c50.7-60.2 46.1-115 44.6-134.7c-44.8 2.6-96.6 30.5-126.1 64.8c-32.5 36.8-51.6 82.3-47.5 133.6c48.4 3.7 92.6-21.2 129-63.7" />
-                  </svg>
-                </div>
-                <div class="investment-card__heading">
-                  <h2 class="investment-card__name">
-                    Apple
-                  </h2>
-                  <span class="investment-card__ticker">
-                    AAPL
-                  </span>
-                </div>
-              </div>
-              <button class="investment-card__favorite" type="button" aria-label="Добавить в избранное">
-                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.99.99 0 0 0 1.024 0C21.126 15.395 22 10.157 22 7.95C22 5.216 19.761 3 17 3s-5 3-5 3s-2.239-3-5-3" />
-                </svg>
-              </button>
-            </div>
-            <div class="investment-card__content">
-              <p class="investment-card__description">
-                Технологии и электроника
-              </p>
-              <div class="investment-card__price">
-                <span>$331.34</span>
-                <small>USD / акция</small>
-              </div>
-              <div class="investment-card__footer">
-                <div class="investment-card__change investment-card__change--positive">
-                  +1.24%
-                  <span>24ч</span>
-                </div>
-              </div>
-            </div>
-            <span class="investment-card__risk investment-card__risk--low">
-              Средний риск
-            </span>
-          </div>
-          <div class="investment-card" data-category="stocks">
-            <span class="investment-card__category investment-card__category--stocks">
-              Акции
-            </span>
-            <div class="investment-card__header">
-              <div class="investment-card__about">
-                <div class="investment-card__icon card">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024">
-                    <path d="M0 0h1024v1024H0z" fill="none" />
-                    <path fill="currentColor"
-                      d="M747.4 535.7c-.4-68.2 30.5-119.6 92.9-157.5c-34.9-50-87.7-77.5-157.3-82.8c-65.9-5.2-138 38.4-164.4 38.4c-27.9 0-91.7-36.6-141.9-36.6C273.1 298.8 163 379.8 163 544.6c0 48.7 8.9 99 26.7 150.8c23.8 68.2 109.6 235.3 199.1 232.6c46.8-1.1 79.9-33.2 140.8-33.2c59.1 0 89.7 33.2 141.9 33.2c90.3-1.3 167.9-153.2 190.5-221.6c-121.1-57.1-114.6-167.2-114.6-170.7m-105.1-305c50.7-60.2 46.1-115 44.6-134.7c-44.8 2.6-96.6 30.5-126.1 64.8c-32.5 36.8-51.6 82.3-47.5 133.6c48.4 3.7 92.6-21.2 129-63.7" />
-                  </svg>
-                </div>
-                <div class="investment-card__heading">
-                  <h2 class="investment-card__name">
-                    Apple
-                  </h2>
-                  <span class="investment-card__ticker">
-                    AAPL
-                  </span>
-                </div>
-              </div>
-              <button class="investment-card__favorite" type="button" aria-label="Добавить в избранное">
-                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.99.99 0 0 0 1.024 0C21.126 15.395 22 10.157 22 7.95C22 5.216 19.761 3 17 3s-5 3-5 3s-2.239-3-5-3" />
-                </svg>
-              </button>
-            </div>
-            <div class="investment-card__content">
-              <p class="investment-card__description">
-                Технологии и электроника
-              </p>
-              <div class="investment-card__price">
-                <span>$331.34</span>
-                <small>USD / акция</small>
-              </div>
-              <div class="investment-card__footer">
-                <div class="investment-card__change investment-card__change--positive">
-                  +1.24%
-                  <span>24ч</span>
-                </div>
-              </div>
-            </div>
-            <span class="investment-card__risk investment-card__risk--low">
-              Средний риск
-            </span>
-          </div>
-          <div class="investment-card" data-category="stocks">
-            <span class="investment-card__category investment-card__category--stocks">
-              Акции
-            </span>
-            <div class="investment-card__header">
-              <div class="investment-card__about">
-                <div class="investment-card__icon card">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024">
-                    <path d="M0 0h1024v1024H0z" fill="none" />
-                    <path fill="currentColor"
-                      d="M747.4 535.7c-.4-68.2 30.5-119.6 92.9-157.5c-34.9-50-87.7-77.5-157.3-82.8c-65.9-5.2-138 38.4-164.4 38.4c-27.9 0-91.7-36.6-141.9-36.6C273.1 298.8 163 379.8 163 544.6c0 48.7 8.9 99 26.7 150.8c23.8 68.2 109.6 235.3 199.1 232.6c46.8-1.1 79.9-33.2 140.8-33.2c59.1 0 89.7 33.2 141.9 33.2c90.3-1.3 167.9-153.2 190.5-221.6c-121.1-57.1-114.6-167.2-114.6-170.7m-105.1-305c50.7-60.2 46.1-115 44.6-134.7c-44.8 2.6-96.6 30.5-126.1 64.8c-32.5 36.8-51.6 82.3-47.5 133.6c48.4 3.7 92.6-21.2 129-63.7" />
-                  </svg>
-                </div>
-                <div class="investment-card__heading">
-                  <h2 class="investment-card__name">
-                    Apple
-                  </h2>
-                  <span class="investment-card__ticker">
-                    AAPL
-                  </span>
-                </div>
-              </div>
-              <button class="investment-card__favorite" type="button" aria-label="Добавить в избранное">
-                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.99.99 0 0 0 1.024 0C21.126 15.395 22 10.157 22 7.95C22 5.216 19.761 3 17 3s-5 3-5 3s-2.239-3-5-3" />
-                </svg>
-              </button>
-            </div>
-            <div class="investment-card__content">
-              <p class="investment-card__description">
-                Технологии и электроника
-              </p>
-              <div class="investment-card__price">
-                <span>$331.34</span>
-                <small>USD / акция</small>
-              </div>
-              <div class="investment-card__footer">
-                <div class="investment-card__change investment-card__change--positive">
-                  +1.24%
-                  <span>24ч</span>
-                </div>
-              </div>
-            </div>
-            <span class="investment-card__risk investment-card__risk--low">
-              Средний риск
-            </span>
-          </div>
-          <div class="investment-card" data-category="stocks">
-            <span class="investment-card__category investment-card__category--stocks">
-              Акции
-            </span>
-            <div class="investment-card__header">
-              <div class="investment-card__about">
-                <div class="investment-card__icon card">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024">
-                    <path d="M0 0h1024v1024H0z" fill="none" />
-                    <path fill="currentColor"
-                      d="M747.4 535.7c-.4-68.2 30.5-119.6 92.9-157.5c-34.9-50-87.7-77.5-157.3-82.8c-65.9-5.2-138 38.4-164.4 38.4c-27.9 0-91.7-36.6-141.9-36.6C273.1 298.8 163 379.8 163 544.6c0 48.7 8.9 99 26.7 150.8c23.8 68.2 109.6 235.3 199.1 232.6c46.8-1.1 79.9-33.2 140.8-33.2c59.1 0 89.7 33.2 141.9 33.2c90.3-1.3 167.9-153.2 190.5-221.6c-121.1-57.1-114.6-167.2-114.6-170.7m-105.1-305c50.7-60.2 46.1-115 44.6-134.7c-44.8 2.6-96.6 30.5-126.1 64.8c-32.5 36.8-51.6 82.3-47.5 133.6c48.4 3.7 92.6-21.2 129-63.7" />
-                  </svg>
-                </div>
-                <div class="investment-card__heading">
-                  <h2 class="investment-card__name">
-                    Apple
-                  </h2>
-                  <span class="investment-card__ticker">
-                    AAPL
-                  </span>
-                </div>
-              </div>
-              <button class="investment-card__favorite" type="button" aria-label="Добавить в избранное">
-                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.99.99 0 0 0 1.024 0C21.126 15.395 22 10.157 22 7.95C22 5.216 19.761 3 17 3s-5 3-5 3s-2.239-3-5-3" />
-                </svg>
-              </button>
-            </div>
-            <div class="investment-card__content">
-              <p class="investment-card__description">
-                Технологии и электроника
-              </p>
-              <div class="investment-card__price">
-                <span>$331.34</span>
-                <small>USD / акция</small>
-              </div>
-              <div class="investment-card__footer">
-                <div class="investment-card__change investment-card__change--positive">
-                  +1.24%
-                  <span>24ч</span>
-                </div>
-              </div>
-            </div>
-            <span class="investment-card__risk investment-card__risk--low">
-              Средний риск
-            </span>
-          </div>
-          <div class="investment-card" data-category="stocks">
-            <span class="investment-card__category investment-card__category--stocks">
-              Акции
-            </span>
-            <div class="investment-card__header">
-              <div class="investment-card__about">
-                <div class="investment-card__icon card">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024">
-                    <path d="M0 0h1024v1024H0z" fill="none" />
-                    <path fill="currentColor"
-                      d="M747.4 535.7c-.4-68.2 30.5-119.6 92.9-157.5c-34.9-50-87.7-77.5-157.3-82.8c-65.9-5.2-138 38.4-164.4 38.4c-27.9 0-91.7-36.6-141.9-36.6C273.1 298.8 163 379.8 163 544.6c0 48.7 8.9 99 26.7 150.8c23.8 68.2 109.6 235.3 199.1 232.6c46.8-1.1 79.9-33.2 140.8-33.2c59.1 0 89.7 33.2 141.9 33.2c90.3-1.3 167.9-153.2 190.5-221.6c-121.1-57.1-114.6-167.2-114.6-170.7m-105.1-305c50.7-60.2 46.1-115 44.6-134.7c-44.8 2.6-96.6 30.5-126.1 64.8c-32.5 36.8-51.6 82.3-47.5 133.6c48.4 3.7 92.6-21.2 129-63.7" />
-                  </svg>
-                </div>
-                <div class="investment-card__heading">
-                  <h2 class="investment-card__name">
-                    Apple
-                  </h2>
-                  <span class="investment-card__ticker">
-                    AAPL
-                  </span>
-                </div>
-              </div>
-              <button class="investment-card__favorite" type="button" aria-label="Добавить в избранное">
-                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.99.99 0 0 0 1.024 0C21.126 15.395 22 10.157 22 7.95C22 5.216 19.761 3 17 3s-5 3-5 3s-2.239-3-5-3" />
-                </svg>
-              </button>
-            </div>
-            <div class="investment-card__content">
-              <p class="investment-card__description">
-                Технологии и электроника
-              </p>
-              <div class="investment-card__price">
-                <span>$331.34</span>
-                <small>USD / акция</small>
-              </div>
-              <div class="investment-card__footer">
-                <div class="investment-card__change investment-card__change--positive">
-                  +1.24%
-                  <span>24ч</span>
-                </div>
-              </div>
-            </div>
-            <span class="investment-card__risk investment-card__risk--low">
-              Средний риск
-            </span>
-          </div>
-          <div class="investment-card" data-category="stocks">
-            <span class="investment-card__category investment-card__category--stocks">
-              Акции
-            </span>
-            <div class="investment-card__header">
-              <div class="investment-card__about">
-                <div class="investment-card__icon card">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024">
-                    <path d="M0 0h1024v1024H0z" fill="none" />
-                    <path fill="currentColor"
-                      d="M747.4 535.7c-.4-68.2 30.5-119.6 92.9-157.5c-34.9-50-87.7-77.5-157.3-82.8c-65.9-5.2-138 38.4-164.4 38.4c-27.9 0-91.7-36.6-141.9-36.6C273.1 298.8 163 379.8 163 544.6c0 48.7 8.9 99 26.7 150.8c23.8 68.2 109.6 235.3 199.1 232.6c46.8-1.1 79.9-33.2 140.8-33.2c59.1 0 89.7 33.2 141.9 33.2c90.3-1.3 167.9-153.2 190.5-221.6c-121.1-57.1-114.6-167.2-114.6-170.7m-105.1-305c50.7-60.2 46.1-115 44.6-134.7c-44.8 2.6-96.6 30.5-126.1 64.8c-32.5 36.8-51.6 82.3-47.5 133.6c48.4 3.7 92.6-21.2 129-63.7" />
-                  </svg>
-                </div>
-                <div class="investment-card__heading">
-                  <h2 class="investment-card__name">
-                    Apple
-                  </h2>
-                  <span class="investment-card__ticker">
-                    AAPL
-                  </span>
-                </div>
-              </div>
-              <button class="investment-card__favorite" type="button" aria-label="Добавить в избранное">
-                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.99.99 0 0 0 1.024 0C21.126 15.395 22 10.157 22 7.95C22 5.216 19.761 3 17 3s-5 3-5 3s-2.239-3-5-3" />
-                </svg>
-              </button>
-            </div>
-            <div class="investment-card__content">
-              <p class="investment-card__description">
-                Технологии и электроника
-              </p>
-              <div class="investment-card__price">
-                <span>$331.34</span>
-                <small>USD / акция</small>
-              </div>
-              <div class="investment-card__footer">
-                <div class="investment-card__change investment-card__change--positive">
-                  +1.24%
-                  <span>24ч</span>
-                </div>
-              </div>
-            </div>
-            <span class="investment-card__risk investment-card__risk--low">
-              Средний риск
-            </span>
-          </div>
-          <div class="investment-card" data-category="stocks">
-            <span class="investment-card__category investment-card__category--stocks">
-              Акции
-            </span>
-            <div class="investment-card__header">
-              <div class="investment-card__about">
-                <div class="investment-card__icon card">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024">
-                    <path d="M0 0h1024v1024H0z" fill="none" />
-                    <path fill="currentColor"
-                      d="M747.4 535.7c-.4-68.2 30.5-119.6 92.9-157.5c-34.9-50-87.7-77.5-157.3-82.8c-65.9-5.2-138 38.4-164.4 38.4c-27.9 0-91.7-36.6-141.9-36.6C273.1 298.8 163 379.8 163 544.6c0 48.7 8.9 99 26.7 150.8c23.8 68.2 109.6 235.3 199.1 232.6c46.8-1.1 79.9-33.2 140.8-33.2c59.1 0 89.7 33.2 141.9 33.2c90.3-1.3 167.9-153.2 190.5-221.6c-121.1-57.1-114.6-167.2-114.6-170.7m-105.1-305c50.7-60.2 46.1-115 44.6-134.7c-44.8 2.6-96.6 30.5-126.1 64.8c-32.5 36.8-51.6 82.3-47.5 133.6c48.4 3.7 92.6-21.2 129-63.7" />
-                  </svg>
-                </div>
-                <div class="investment-card__heading">
-                  <h2 class="investment-card__name">
-                    Apple
-                  </h2>
-                  <span class="investment-card__ticker">
-                    AAPL
-                  </span>
-                </div>
-              </div>
-              <button class="investment-card__favorite" type="button" aria-label="Добавить в избранное">
-                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.99.99 0 0 0 1.024 0C21.126 15.395 22 10.157 22 7.95C22 5.216 19.761 3 17 3s-5 3-5 3s-2.239-3-5-3" />
-                </svg>
-              </button>
-            </div>
-            <div class="investment-card__content">
-              <p class="investment-card__description">
-                Технологии и электроника
-              </p>
-              <div class="investment-card__price">
-                <span>$331.34</span>
-                <small>USD / акция</small>
-              </div>
-              <div class="investment-card__footer">
-                <div class="investment-card__change investment-card__change--positive">
-                  +1.24%
-                  <span>24ч</span>
-                </div>
-              </div>
-            </div>
-            <span class="investment-card__risk investment-card__risk--low">
-              Средний риск
-            </span>
-          </div>
-          <div class="investment-card" data-category="stocks">
-            <span class="investment-card__category investment-card__category--stocks">
-              Акции
-            </span>
-            <div class="investment-card__header">
-              <div class="investment-card__about">
-                <div class="investment-card__icon card">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024">
-                    <path d="M0 0h1024v1024H0z" fill="none" />
-                    <path fill="currentColor"
-                      d="M747.4 535.7c-.4-68.2 30.5-119.6 92.9-157.5c-34.9-50-87.7-77.5-157.3-82.8c-65.9-5.2-138 38.4-164.4 38.4c-27.9 0-91.7-36.6-141.9-36.6C273.1 298.8 163 379.8 163 544.6c0 48.7 8.9 99 26.7 150.8c23.8 68.2 109.6 235.3 199.1 232.6c46.8-1.1 79.9-33.2 140.8-33.2c59.1 0 89.7 33.2 141.9 33.2c90.3-1.3 167.9-153.2 190.5-221.6c-121.1-57.1-114.6-167.2-114.6-170.7m-105.1-305c50.7-60.2 46.1-115 44.6-134.7c-44.8 2.6-96.6 30.5-126.1 64.8c-32.5 36.8-51.6 82.3-47.5 133.6c48.4 3.7 92.6-21.2 129-63.7" />
-                  </svg>
-                </div>
-                <div class="investment-card__heading">
-                  <h2 class="investment-card__name">
-                    Apple
-                  </h2>
-                  <span class="investment-card__ticker">
-                    AAPL
-                  </span>
-                </div>
-              </div>
-              <button class="investment-card__favorite" type="button" aria-label="Добавить в избранное">
-                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.99.99 0 0 0 1.024 0C21.126 15.395 22 10.157 22 7.95C22 5.216 19.761 3 17 3s-5 3-5 3s-2.239-3-5-3" />
-                </svg>
-              </button>
-            </div>
-            <div class="investment-card__content">
-              <p class="investment-card__description">
-                Технологии и электроника
-              </p>
-              <div class="investment-card__price">
-                <span>$331.34</span>
-                <small>USD / акция</small>
-              </div>
-              <div class="investment-card__footer">
-                <div class="investment-card__change investment-card__change--positive">
-                  +1.24%
-                  <span>24ч</span>
-                </div>
-              </div>
-            </div>
-            <span class="investment-card__risk investment-card__risk--low">
-              Средний риск
-            </span>
-          </div>
-          <div class="investment-card" data-category="stocks">
-            <span class="investment-card__category investment-card__category--stocks">
-              Акции
-            </span>
-            <div class="investment-card__header">
-              <div class="investment-card__about">
-                <div class="investment-card__icon card">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024">
-                    <path d="M0 0h1024v1024H0z" fill="none" />
-                    <path fill="currentColor"
-                      d="M747.4 535.7c-.4-68.2 30.5-119.6 92.9-157.5c-34.9-50-87.7-77.5-157.3-82.8c-65.9-5.2-138 38.4-164.4 38.4c-27.9 0-91.7-36.6-141.9-36.6C273.1 298.8 163 379.8 163 544.6c0 48.7 8.9 99 26.7 150.8c23.8 68.2 109.6 235.3 199.1 232.6c46.8-1.1 79.9-33.2 140.8-33.2c59.1 0 89.7 33.2 141.9 33.2c90.3-1.3 167.9-153.2 190.5-221.6c-121.1-57.1-114.6-167.2-114.6-170.7m-105.1-305c50.7-60.2 46.1-115 44.6-134.7c-44.8 2.6-96.6 30.5-126.1 64.8c-32.5 36.8-51.6 82.3-47.5 133.6c48.4 3.7 92.6-21.2 129-63.7" />
-                  </svg>
-                </div>
-                <div class="investment-card__heading">
-                  <h2 class="investment-card__name">
-                    Apple
-                  </h2>
-                  <span class="investment-card__ticker">
-                    AAPL
-                  </span>
-                </div>
-              </div>
-              <button class="investment-card__favorite" type="button" aria-label="Добавить в избранное">
-                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.99.99 0 0 0 1.024 0C21.126 15.395 22 10.157 22 7.95C22 5.216 19.761 3 17 3s-5 3-5 3s-2.239-3-5-3" />
-                </svg>
-              </button>
-            </div>
-            <div class="investment-card__content">
-              <p class="investment-card__description">
-                Технологии и электроника
-              </p>
-              <div class="investment-card__price">
-                <span>$331.34</span>
-                <small>USD / акция</small>
-              </div>
-              <div class="investment-card__footer">
-                <div class="investment-card__change investment-card__change--positive">
-                  +1.24%
-                  <span>24ч</span>
-                </div>
-              </div>
-            </div>
-            <span class="investment-card__risk investment-card__risk--low">
-              Средний риск
-            </span>
-          </div>
+
         </div>
         <div class="catalog__more">
           <button class="catalog__more-button card" type="button">
@@ -719,6 +132,81 @@
           </button>
         </div>
       </section>
+      <div class="modal" id="investmentModal" aria-hidden="true">
+        <div class="modal__overlay"></div>
+
+        <div class="modal__content" role="dialog" aria-modal="true" aria-labelledby="modalName">
+          <button class="modal__close" type="button" aria-label="Закрыть">
+            <span></span>
+            <span></span>
+          </button>
+
+          <div class="modal__header">
+
+            <div class="modal__heading">
+              <span class="modal__category" id="modalCategory"></span>
+
+              <h2 class="modal__name" id="modalName"></h2>
+
+              <span class="modal__ticker" id="modalTicker"></span>
+            </div>
+          </div>
+
+          <p class="modal__description" id="modalDescription"></p>
+
+          <div class="modal__info">
+            <div class="modal__info-item">
+              <span class="modal__info-label">Цена</span>
+              <strong id="modalPrice"></strong>
+            </div>
+
+            <div class="modal__info-item">
+              <span class="modal__info-label">Изменение за 24ч</span>
+              <strong id="modalChange"></strong>
+            </div>
+
+            <div class="modal__info-item">
+              <span class="modal__info-label">Риск</span>
+              <strong id="modalRisk"></strong>
+            </div>
+
+            <div class="modal__info-item">
+              <span class="modal__info-label">Сектор</span>
+              <strong id="modalSector"></strong>
+            </div>
+          </div>
+
+          <div class="modal__parameters">
+            <div class="modal__parameter">
+              <h3 class="modal__parameter-title">
+                Сумма инвестиций
+              </h3>
+
+              <div class="modal__options" id="modalAmountOptions"></div>
+            </div>
+
+            <div class="modal__parameter">
+              <h3 class="modal__parameter-title">
+                Срок инвестирования
+              </h3>
+
+              <div class="modal__options" id="modalTermOptions"></div>
+            </div>
+          </div>
+
+          <div class="modal__result">
+            <div class="modal__result-item">
+              <span>Сумма инвестиций</span>
+              <strong id="modalInvestmentAmount"></strong>
+            </div>
+
+            <div class="modal__result-item">
+              <span>Потенциальный доход</span>
+              <strong id="modalPotentialResult"></strong>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="footer" id="footer">
 
@@ -796,6 +284,8 @@
   </div>
 
   <script src="script.js"></script>
+  <script src="investments.js"></script>
+  <script src="catalog.js"></script>
 </body>
 
 </html>
